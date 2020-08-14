@@ -8,7 +8,6 @@ def nyc_pigeon_organizer(data)
       value.each{ |value| 
         if hash[value]
           hash[value][key] << i.to_s
-          binding.pry
         else
           hash[value] = { key => [i.to_s]}
         end
